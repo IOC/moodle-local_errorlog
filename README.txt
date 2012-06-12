@@ -18,7 +18,7 @@ Download code from gitHub, and copy inside directory MOODLE_PATH/local/errorlog
 Configuration
 =============
 
-Edit Moodle's config.php file to add the variable $CFG->local_errorlog_pat and set the path to a file you want to show. 
+Edit Moodle's config.php file to add the variable $CFG->local_errorlog_path and set the path to a file you want to show. 
 
 
 Author
