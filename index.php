@@ -57,7 +57,7 @@ if ($file) {
     $error = get_string('errorlog_notfound', 'local_errorlog');
 }
 
-$content = implode('', $lines);
+$content = s(implode('', $lines));
 
 include 'index.html';
 
