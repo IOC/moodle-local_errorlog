@@ -16,6 +16,8 @@
 
 YUI(M.yui.loader).use('node', function(Y) {
 	var node = Y.one("#errorlog_scroll");
-	var height = node.get('scrollHeight');
-	node.set('scrollTop', height);
+	if (node) {
+	   var height = node.get('scrollHeight');
+	   node.set('scrollTop', height);
+	}
 });
