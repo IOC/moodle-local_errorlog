@@ -21,7 +21,7 @@ require_once($CFG->libdir . '/adminlib.php');
 
 admin_externalpage_setup('local_errorlog');
 
-require_capability('moodle/site:config', get_context_instance(CONTEXT_SYSTEM));
+require_capability('moodle/site:config', context_system::instance());
 
 $PAGE->requires->js('/local/errorlog/index.js');
 $PAGE->requires->css('/local/errorlog/index.css');
