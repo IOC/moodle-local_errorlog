@@ -15,15 +15,26 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package    local
- * @subpackage errorlog
- * @copyright  2014 Institut Obert de Catalunya
+ * Privacy Subsystem implementation for local_errorlog.
+ *
+ * @package    local_errorlog
+ * @copyright  2018 Institut Obert de Catalunya
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace local_errorlog\privacy;
+
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2013031401;
-$plugin->requires = 2018051700; // Moodle 3.5
-$plugin->component = 'local_errorlog';
-$plugin->cron = 0;
+class provider implements \core_privacy\local\metadata\null_provider {
+
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason() : string {
+        return 'privacy:metadata';
+    }
+}

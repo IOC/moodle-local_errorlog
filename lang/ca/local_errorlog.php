@@ -22,3 +22,4 @@ $string['errorlog_notfound'] = 'No s\'ha trobat el fitxer de registre d\'errors.
 $string['errorlog_path'] = 'Camí registre d\'errors';
 $string['errorlog_refresh'] = 'Refresca';
 $string['pluginname'] = 'Registre d\'errors';
+$string['privacy:metadata'] = 'Registre d\'errors no enregistra cap dada personal.';

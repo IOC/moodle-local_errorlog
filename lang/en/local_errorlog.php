@@ -21,3 +21,4 @@ $string['errorlog_notfound'] = 'Error log file not found.';
 $string['errorlog_path'] = 'Path to error log file';
 $string['errorlog_refresh'] = 'Refresh';
 $string['pluginname'] = 'Error log';
+$string['privacy:metadata'] = 'Error log plugin does not store any personal data.';
